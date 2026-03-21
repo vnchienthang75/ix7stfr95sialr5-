@@ -14,7 +14,7 @@ function RandomString(stringSet, numbersStringSet) {
   return result;
 }
 
-const userId = "i" + RandomString(letters + numbers, 14) + "@gmail.com";
+const userId = RandomString(letters, 1) + RandomString(letters + numbers, 14) + "@gmail.com";
 const pasword = RandomString(
   letters + upercaseLetters + numbers + specialChars,
   22,
